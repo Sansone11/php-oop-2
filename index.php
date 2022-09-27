@@ -13,7 +13,7 @@ $food = [
 ];
 
 $crocchette = new Petfood($food);
-var_dump($crocchette);
+// var_dump($crocchette);
 
 $toys = [
     "name"=>"tira graffi",
@@ -26,7 +26,7 @@ $toys = [
 ];
 
 $tiragraffi = new PetToys($toys);
-var_dump($tiragraffi);
+// var_dump($tiragraffi);
 
 $clothes = [
     "name"=>"giacca a vento",
@@ -39,5 +39,12 @@ $clothes = [
 ];
 
 $moda = new PetStyle($clothes);
-var_dump($moda);
+// var_dump($moda);
+
+$tot=[
+    $crocchette,
+    $tiragraffi,
+    $clothes,
+];
+var_dump($tot);
 
