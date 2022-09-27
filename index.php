@@ -50,6 +50,7 @@ var_dump($tot);
 
 $cart = new Cart('', '', 0);
 $total_price = $cart->setTotalPrice($tot);
-var_dump($total_price);
+echo 'il totale è di... '.$total_price .'€';
+
 
 

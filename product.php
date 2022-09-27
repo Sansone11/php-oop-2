@@ -20,9 +20,6 @@ class Product {
      $this-> categories = $param['categories'];    
     }
 
-    public function setPrice($price){
-
-    }
 }
 
 class Cart {
