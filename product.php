@@ -38,6 +38,23 @@ class Chart {
         $this->productNumber = $productNumber;
         $this->TotalPrice = $TotalPrice;
     }
-}
+    function getTotalPrice($tot){
+        foreach($tot as $value){
+            
+            
+        }
+        return $this -> $value;
+    
+    }
+};
+
+
+$chart = new Chart($tot);
+$total_price = $chart->getTotalPrice($tot);
+var_dump($totalPrice);
+
+
+
+
 
 
