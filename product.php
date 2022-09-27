@@ -5,7 +5,6 @@ class Product {
     public $poster;
     public $description;
     public $weight;
-    public $volume;
     public $brand;
     public $categories;
 
@@ -16,8 +15,7 @@ class Product {
      $this-> price = $param['price']; 
      $this-> poster = $param['poster']; 
      $this-> description = $param['description']; 
-     $this-> weight = $param['weight']; 
-     $this-> volume = $param['volume']; 
+     $this-> weight = $param['weight'];  
      $this-> brand = $param['brand']; 
      $this-> categories = $param['categories'];    
     }
