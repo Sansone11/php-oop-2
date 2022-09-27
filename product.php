@@ -25,5 +25,19 @@ class Product {
     }
 }
 
+class Chart {
+    public $name;
+    public $email;
+    public $productNumber;
+    public $TotalPrice;
 
-?>
+    function __construct($name,$email,$productNumber,$TotalPrice)
+    {
+        $this->name = $name;
+        $this->email = $email;
+        $this->productNumber = $productNumber;
+        $this->TotalPrice = $TotalPrice;
+    }
+}
+
+
