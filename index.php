@@ -44,7 +44,12 @@ $moda = new PetStyle($clothes);
 $tot=[
     $crocchette,
     $tiragraffi,
-    $clothes,
+    $moda,
 ];
 var_dump($tot);
+
+$cart = new Cart('', '', 0);
+$total_price = $cart->setTotalPrice($tot);
+var_dump($total_price);
+
 

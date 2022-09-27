@@ -25,33 +25,28 @@ class Product {
     }
 }
 
-class Chart {
+class Cart {
     public $name;
     public $email;
     public $productNumber;
     public $TotalPrice;
 
-    function __construct($name,$email,$productNumber,$TotalPrice)
+    function __construct($name,$email,$productNumber)
     {
         $this->name = $name;
         $this->email = $email;
         $this->productNumber = $productNumber;
-        $this->TotalPrice = $TotalPrice;
     }
-    function getTotalPrice($tot){
-        foreach($tot as $value){
-            
-            
+    function setTotalPrice($products){
+        $this->TotalPrice = 0;
+        foreach($products as $product){
+            $this->TotalPrice += $product->price;
         }
-        return $this -> $value;
+        return $this->TotalPrice;
     
     }
 };
 
-
-$chart = new Chart($tot);
-$total_price = $chart->getTotalPrice($tot);
-var_dump($totalPrice);
 
 
 
