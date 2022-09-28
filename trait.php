@@ -1,17 +1,17 @@
 <?php
-require_once __DIR__.'/trait.php';
-trait getOrder
+trait Animale
 {
-    public $name;
-    public $email;
-    public $productNumber;
-    public $TotalPrice;
-    function setTotalPrice($products)
+    public $animale;
+    
+    public function setAnimale($animale)
     {
-        $this->TotalPrice = 0;
-        foreach ($products as $product) {
-            $this->TotalPrice += $product->price;
-        }
-        return $this->TotalPrice;
+        $this->animale = $animale;
     }
+
+    public function getAnimale(){
+        return $this->animale;
+    }
+       
+
+   
 }

@@ -11,10 +11,13 @@ $food = [
     "weight"=>300,
     "brand"=>"Meow-Mix",
     "categories"=>"food",
+    "animale"=>"Gatto",
+    "ingredienti"=>['pollo','curcuma','riso'],
 ];
 
 $crocchette = new Petfood($food);
-// var_dump($crocchette);
+
+ var_dump($crocchette);
 
 $toys = [
     "name"=>"tira graffi",
@@ -24,10 +27,12 @@ $toys = [
     "weight"=>500,
     "brand"=>"Meow-Mix",
     "categories"=>"PetToys",
+    "animale"=>"Gatto",
+    "giochi"=>['palline','tiragraffi','topo di gomma'],
 ];
 
 $tiragraffi = new PetToys($toys);
-// var_dump($tiragraffi);
+var_dump($tiragraffi);
 
 $clothes = [
     "name"=>"giacca a vento",
@@ -37,10 +42,12 @@ $clothes = [
     "weight"=>30,
     "brand"=>"Meow-Mix",
     "categories"=>"Petclothes",
+    "animale"=>"Gatto",
+    "taglie"=>['s','M','L'],
 ];
 
 $moda = new PetStyle($clothes);
-// var_dump($moda);
+ var_dump($moda);
 
 $tot=[
     $crocchette,
@@ -59,11 +66,13 @@ $user = [
     "address"=>"viale Garibaldi 51",
     "productNumber" => 3,
     "cap" =>"00196",
-    "totalPrice"=>'',
 ];
 
 $utente = new User($user);
 var_dump($utente);
+
+
+
 
 
 
