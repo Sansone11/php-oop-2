@@ -1,4 +1,5 @@
 <?php 
+require_once __DIR__ .'/trait.php';
 class Product {
     public $name;
     public $price;
@@ -34,15 +35,15 @@ class Cart {
         $this->email = $email;
         $this->productNumber = $productNumber;
     }
-     function setTotalPrice($products){
-         $this->TotalPrice = 0;
-         foreach($products as $product){
-             $this->TotalPrice += $product->price;
-         }
-         return $this->TotalPrice;
+    //  function setTotalPrice($products){
+    //     //  $this->TotalPrice = 0;
+    //     //   foreach($products as $product){
+    //     //   $this->TotalPrice += $product->price;
+    // //      }
+    //      return $this->TotalPrice;
     
-     }
-   
+    //  }
+     use getOrder;
 };
 
 

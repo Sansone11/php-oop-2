@@ -58,6 +58,8 @@ $user = [
     "email" => "Miomao@gmail.com",
     "address"=>"viale Garibaldi 51",
     "productNumber" => 3,
+    "cap" =>"00196",
+    "totalPrice"=>'',
 ];
 
 $utente = new User($user);
